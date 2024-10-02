@@ -10,6 +10,17 @@ menuconfig SAMPLES_RUST
 
 if SAMPLES_RUST
 
+config SAMPLE_RUST_SKP
+	tristate "Research"
+	help
+	  Research Kernel Module
+
+	  To compile this as a module, choose M here:
+	  the module will be called rust_minimal.
+
+	  If unsure, say N.
+
+
 config SAMPLE_RUST_MINIMAL
 	tristate "Minimal"
 	help

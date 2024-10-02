@@ -22,6 +22,17 @@
 #include <linux/wait.h>
 #include <linux/workqueue.h>
 
+/* Includes for LSM */
+#include <linux/lsm_hooks.h>
+#include <linux/sysctl.h>
+#include <linux/ptrace.h>
+#include <linux/prctl.h>
+#include <linux/ratelimit.h>
+#include <linux/task_work.h>
+#include <linux/spinlock.h>
+#include <uapi/linux/lsm.h>
+
+
 /* `bindgen` gets confused at certain things. */
 const size_t RUST_CONST_HELPER_ARCH_SLAB_MINALIGN = ARCH_SLAB_MINALIGN;
 const size_t RUST_CONST_HELPER_PAGE_SIZE = PAGE_SIZE;
